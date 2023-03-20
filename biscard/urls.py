@@ -1,6 +1,9 @@
+from django.contrib import admin
 from django.urls import path
-from hello import views
+from hello.views import home
+
 
 urlpatterns = [
-    path("", views.home)
+    path('work/', admin.site.urls),
+    path('', home)
 ]
